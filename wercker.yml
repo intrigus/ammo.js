@@ -1,6 +1,6 @@
 box:
       id: ubuntu
-      tag: 15.04
+      tag: 14.04.2
 no-response-timeout: 20
 command-timeout: 60
 build:
@@ -10,7 +10,8 @@ build:
          code: |
            sudo apt-get update -y && sudo apt-get dist-upgrade -y
     - install-packages:
-        packages: git build-essential default-jre cmake g++ python libtool autotools-dev automake curl tar python-pip nodejs
+        packages: git build-essential default-jre cmake g++ python libtool autotools-dev automake curl tar python-pip  nodejs
+        #
     - script:
          name: emsdk
          code: |
