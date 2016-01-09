@@ -1,5 +1,5 @@
 box:
-      id: ubuntu/trusty
+      id: ubuntu
       tag: latest
 no-response-timeout: 20
 command-timeout: 60
