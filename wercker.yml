@@ -8,19 +8,19 @@ build:
     - script:
          name: update apt
          code: |
-           #sudo apt-get update -y
-           sudo apt-get install git -y
-           sudo apt-get install build-essential -y
-           sudo apt-get install default-jre -y
-           sudo apt-get install cmake -y
-           sudo apt-get install g++ -y
-           sudo apt-get install python -y
-           sudo apt-get install libtool -y
-           sudo apt-get install autotools-dev -y
-           sudo apt-get install automake -y
-           sudo apt-get install curl -y
-           sudo apt-get install tar  -y
-           sudo apt-get install nodejs -y
+           sudo apt-get update -y
+           sudo apt-get --no-upgrade install git -y
+           sudo apt-get --no-upgrade install build-essential -y
+           sudo apt-get --no-upgrade install install default-jre -y
+           sudo apt-get --no-upgrade install install cmake -y
+           sudo apt-get --no-upgrade install install g++ -y
+           sudo apt-get --no-upgrade install install python -y
+           sudo apt-get --no-upgrade install install libtool -y
+           sudo apt-get --no-upgrade install install autotools-dev -y
+           sudo apt-get --no-upgrade install install automake -y
+           sudo apt-get --no-upgrade install install curl -y
+           sudo apt-get --no-upgrade install install tar  -y
+           sudo apt-get --no-upgrade install install nodejs -y
     - script:
          name: emsdk
          code: |
