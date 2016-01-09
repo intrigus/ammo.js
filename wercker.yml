@@ -1,4 +1,6 @@
-box: nodesource/trusty
+box:
+      id: ubuntu/trusty
+      tag: latest
 no-response-timeout: 20
 command-timeout: 60
 build:
