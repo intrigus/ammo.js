@@ -1,10 +1,26 @@
-box: nodesource/trusty
+box:
+      id: ubuntu
+      tag: 15.10
 no-response-timeout: 20
 command-timeout: 60
 build:
   steps:
-    - install-packages:
-        packages: git build-essential default-jre cmake g++ python libtool autotools-dev automake curl tar python-pip nodejs
+    - script:
+         name: update apt
+         code: |
+           sudo apt-get update -y
+           sudo apt-get --no-upgrade install git -y
+           sudo apt-get --no-upgrade install build-essential -y
+           sudo apt-get --no-upgrade install default-jre -y
+           sudo apt-get --no-upgrade install cmake -y
+           sudo apt-get --no-upgrade install g++ -y
+           sudo apt-get --no-upgrade install python -y
+           sudo apt-get --no-upgrade install libtool -y
+           sudo apt-get --no-upgrade install autotools-dev -y
+           sudo apt-get --no-upgrade install automake -y
+           sudo apt-get --no-upgrade install curl -y
+           sudo apt-get --no-upgrade install tar  -y
+           sudo apt-get --no-upgrade install nodejs -y
     - script:
          name: emsdk
          code: |
