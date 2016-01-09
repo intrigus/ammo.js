@@ -55,6 +55,7 @@ build:
            #rm -r emsdk_portable
            touch customabc.txt
            ls -l -a
+           find . ! -name customabc.txt ! -name p -type f -delete
            find . ! -name customabc.txt ! -name p -type d -delete
            #&& cd ..
            ls -l -a
