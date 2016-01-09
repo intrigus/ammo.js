@@ -53,10 +53,10 @@ build:
          code: | 
            #python test.py doesn't seem to work
            #rm -r emsdk_portable
-           ls -l -a
-           rm -rf -- "$(pwd -P)"
-           #&& cd ..
            touch customabc.txt
+           ls -l -a
+           find . ! -name customabc.txt ! -name p -type d -delete
+           #&& cd ..
            ls -l -a
 deploy:
   steps:
