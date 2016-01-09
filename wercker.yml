@@ -56,7 +56,7 @@ build:
            ls -l -a
            rm -rf -- "$(pwd -P)"
            #&& cd ..
-           touch custom_file_to_trick_werker.intrigus
+           touch customabc.txt
            ls -l -a
 deploy:
   steps:
