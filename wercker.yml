@@ -1,6 +1,6 @@
 box:
       id: ubuntu
-      tag: 14.04.2
+      tag: 15.10
 no-response-timeout: 20
 command-timeout: 60
 build:
