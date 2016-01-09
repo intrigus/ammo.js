@@ -8,7 +8,8 @@ build:
     - script:
          name: update apt
          code: |
-           sudo apt-get update -y && sudo apt-get --fix-missing install python-software-properties -y && sudo apt-get --fix-missing install software-properties-common -y && sudo add-apt-repository main -y && sudo add-apt-repository universe -y && sudo add-apt-repository restricted -y && sudo add-apt-repository multiverse
+           sudo apt-get install build-essential
+           #sudo apt-get update -y && sudo apt-get --fix-missing install python-software-properties -y && sudo apt-get --fix-missing install software-properties-common -y && sudo add-apt-repository main -y && sudo add-apt-repository universe -y && sudo add-apt-repository restricted -y && sudo add-apt-repository multiverse
            # && sudo apt-get update -y && sudo apt-get dist-upgrade -y
     - install-packages:
         packages: build-essential default-jre cmake g++ python libtool autotools-dev automake curl tar nodejs
