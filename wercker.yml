@@ -8,7 +8,7 @@ build:
     - script:
          name: update apt
          code: |
-           sudo apt-get --fix-missing install software-properties-common -y && sudo add-apt-repository main -y# && sudo apt-get update -y && sudo apt-get dist-upgrade -y
+           sudo apt-get update && sudo apt-get --fix-missing install python-software-properties && sudo apt-get --fix-missing install software-properties-common -y && sudo add-apt-repository main -y# && sudo apt-get update -y && sudo apt-get dist-upgrade -y
     - install-packages:
         packages: build-essential default-jre cmake g++ python libtool autotools-dev automake curl tar nodejs
         # git 
