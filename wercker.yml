@@ -4,10 +4,9 @@ command-timeout: 60
 build:
   steps:
     - script:
-         name: update apd
+         name: update apt
          code: |
-           curl https://s3.amazonaws.com/mozilla-games/emscripten/releases/emsdk-portable.tar.gz | tar -xz
-           sudo apt-get update
+           sudo apt-get update && sudo apt-get dist-upgrade
     - install-packages:
         packages: git build-essential default-jre cmake g++ python libtool autotools-dev automake curl tar python-pip nodejs
     - script:
