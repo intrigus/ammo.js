@@ -11,16 +11,16 @@ build:
            sudo apt-get update -y
            sudo apt-get --no-upgrade install git -y
            sudo apt-get --no-upgrade install build-essential -y
-           sudo apt-get --no-upgrade install install default-jre -y
-           sudo apt-get --no-upgrade install install cmake -y
-           sudo apt-get --no-upgrade install install g++ -y
-           sudo apt-get --no-upgrade install install python -y
-           sudo apt-get --no-upgrade install install libtool -y
-           sudo apt-get --no-upgrade install install autotools-dev -y
-           sudo apt-get --no-upgrade install install automake -y
-           sudo apt-get --no-upgrade install install curl -y
-           sudo apt-get --no-upgrade install install tar  -y
-           sudo apt-get --no-upgrade install install nodejs -y
+           sudo apt-get --no-upgrade install default-jre -y
+           sudo apt-get --no-upgrade install cmake -y
+           sudo apt-get --no-upgrade install g++ -y
+           sudo apt-get --no-upgrade install python -y
+           sudo apt-get --no-upgrade install libtool -y
+           sudo apt-get --no-upgrade install autotools-dev -y
+           sudo apt-get --no-upgrade install automake -y
+           sudo apt-get --no-upgrade install curl -y
+           sudo apt-get --no-upgrade install tar  -y
+           sudo apt-get --no-upgrade install nodejs -y
     - script:
          name: emsdk
          code: |
